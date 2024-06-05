@@ -8,7 +8,7 @@
     - Wiring to STLink2
     - Programming STM32 MCUs using STM32CubeProgrammer
     - Programming STM32 MCUs using Gimbal Bootloader
-- How to install the application on Lattepanda?
+- [How to install the application on Lattepanda?](#how-to-install-the-application-on-lattepanda)
     - open Lattepanda on-board UART with LattepandaLeonardo firmware [[Doc](https://docs.lattepanda.com/content/1st_edition/vs_programming/#step-3-blink-your-board)]
     - version management
 
