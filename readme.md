@@ -4,7 +4,7 @@
 ## Table of Contents
 - [Gimbal Console development workflow](#gimbal-console-development-workflow)
 - [Pinout of the PCBs & Pinmap for wiring](#pinout-of-the-PCBs-&-Pinmap-for-wiring)
-- How to flash the firmware on Gimbal console controller
+- [How to flash the firmware on Gimbal console controller](#how-to-flash-the-firmware-on-gimbal-console-controller)
     - flash burner
     - bootloader
 - How to install the application on Lattepanda?
@@ -32,5 +32,27 @@
     - application released[[Download](https://github.com/GimbalConsole/GimbalConsolePubRepo/releases)]
 
 ## Pinout of the PCBs & Pinmap for wiring
-- Controller PCB's pinout
+- Controller board pinout
 <img title="Controller pinout" alt="pinout image" src="/doc/images/controller_wiring.png">
+<img title="Controller pinout" alt="pinout image" src="/doc/images/controller_wiring1.png">
+<img title="Controller pinout" alt="pinout image" src="/doc/images/controller_wiring2.png">
+- Left board pinout
+<img title="Controller pinout" alt="pinout image" src="/doc/images/left_wiring.png">
+<img title="Controller pinout" alt="pinout image" src="/doc/images/left_wiring1.png">
+- Right board pinout
+<img title="Controller pinout" alt="pinout image" src="/doc/images/right_wiring.png">
+<img title="Controller pinout" alt="pinout image" src="/doc/images/right_wiring1.png">
+
+## How to flash the firmware on Gimbal console controller
+- Wiring to STLink2
+    <img title="Controller pinout" alt="pinout image" src="/doc/images/STLink2_pinout.png">
+
+    | Controller Debug | STLink2 |
+    | --- | --- |
+    |3.3V| VTref (1)|
+    |GND  | GND (4)|
+    |CLK  | SWCLK (9)|
+    |DIO  | SWDIO (7)|
+    |RST  | RESET (15)|
+
+- Programming STM32 MCUs using STM32CubeProgrammer
