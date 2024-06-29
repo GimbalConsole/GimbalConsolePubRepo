@@ -8,10 +8,8 @@
     - Wiring to STLink2
     - Programming STM32 MCUs using STM32CubeProgrammer
     - Programming STM32 MCUs using Gimbal Bootloader
-- [How to install the application on Lattepanda?](#how-to-install-the-application-on-lattepanda)
-    - Uart driver installation [[Doc](https://docs.lattepanda.com/content/1st_edition/vs_programming/#step-3-blink-your-board)]
-    - Application version management
-    - 
+- [Uart driver installation on Lattepanda](#uart-driver-installationtutorial)
+- Installing the Application with the latest update
 
 ## Gimbal Console development workflow
 
@@ -64,8 +62,7 @@
 - Programming STM32 MCUs using Gimbal Bootloader
 ---
 
-## How to install the application on Lattepanda?
-- UART Driver installation[[Tutorial](https://docs.lattepanda.com/content/3rd_delta_edition/drivers_and_software/#in-ubuntu-os)]
+## UART Driver installation[[Tutorial](https://docs.lattepanda.com/content/3rd_delta_edition/drivers_and_software/#in-ubuntu-os)]
     - Download the Arduino IDE 1.8.16.
     - Unzip the downloaded arduino
         <Container><Preview>
@@ -101,4 +98,7 @@
     
     - Then choose the serial port: “Port: /dev/ttyACM0 xxx” -> “/dev/ttyACM0(LattePanda Leonardo)”.
     <img title="arduino" alt="select port" src="https://docs.lattepanda.com/assets/images/LPLeonardoPortUbuntu.webp">
+    
     - Download the code and upload (Schetch/Upload). [[Download](https://github.com/GimbalConsole/LattepandaLeonardo/blob/master/GimbalConsole_leonardo.ino)]
+
+- Installing the Application with the latest update
