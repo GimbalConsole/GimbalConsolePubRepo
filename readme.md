@@ -9,8 +9,9 @@
     - Programming STM32 MCUs using STM32CubeProgrammer
     - Programming STM32 MCUs using Gimbal Bootloader
 - [How to install the application on Lattepanda?](#how-to-install-the-application-on-lattepanda)
-    - open Lattepanda on-board UART with LattepandaLeonardo firmware [[Doc](https://docs.lattepanda.com/content/1st_edition/vs_programming/#step-3-blink-your-board)]
-    - version management
+    - Uart driver installation [[Doc](https://docs.lattepanda.com/content/1st_edition/vs_programming/#step-3-blink-your-board)]
+    - Application version management
+    - 
 
 ## Gimbal Console development workflow
 
@@ -29,8 +30,8 @@
 - development workflow
     - development - dev branch
     - production - main branch
-    - version sync - note in [[version.txt](https://github.com/GimbalConsole/GimbalConsoleApp2/blob/master/version.txt)]
-    - application released[[Download](https://github.com/GimbalConsole/GimbalConsolePubRepo/releases)]
+    - application version sync - note in [[version.txt](https://github.com/GimbalConsole/GimbalConsoleApp2/blob/master/version.txt)]
+    - application releases[[Download](https://github.com/GimbalConsole/GimbalConsolePubRepo/releases)]
 
 ## Pinout of the PCBs & Pinmap for wiring
 - Controller board pinout
