@@ -97,9 +97,31 @@
 - Run Arduino IDE，Open “Tool” menu，Choose “Board：xxx” -> “LattePanda AVR Boards”->“LattePanda Leonardo”
 <img title="arduino" alt="select port" src="https://docs.lattepanda.com/assets/images/LPLeoBoardUbuntu.webp">
 
-- Then choose the serial port: “Port: /dev/ttyACM0 xxx” -> “/dev/ttyACM0(LattePanda Leonardo)”.
+- Choose the serial port: “Port: /dev/ttyACM0 xxx” -> “/dev/ttyACM0(LattePanda Leonardo)”.
 <img title="arduino" alt="select port" src="https://docs.lattepanda.com/assets/images/LPLeonardoPortUbuntu.webp">
 
-- Download the code and upload (Schetch/Upload). [[Download](https://github.com/GimbalConsole/LattepandaLeonardo/blob/master/GimbalConsole_leonardo.ino)]
+- Download the code(Schetch/Upload). [[Download](https://github.com/GimbalConsole/LattepandaLeonardo/blob/master/GimbalConsole_leonardo.ino)]
+
+- Compile the code and Upload firmware
 
 ## Installing the Application with the latest update
+
+- download app_update.sh script on your local
+
+    - download the script by using git
+    <Container><Preview><pre><code class="language-html"><backify-button>git clone git@github.com:GimbalConsole/GimbalConsolePubRepo.git</backify-button></code></pre></Preview></Container>
+
+    - download the script manually
+    <img title="Controller pinout" alt="pinout image" src="/doc/images/download_repo.png">
+
+- run app_update.sh script 
+    <Container><Preview>
+        <pre><code class="language-html"><backify-button>cd GimbalConsolePubRepo</backify-button>
+        </code>
+        <code class="language-html"><backify-button>./app_update.sh</backify-button>
+        </code>
+        </pre>
+    </Preview></Container>
+
+    <img title="Controller pinout" alt="app update" src="/doc/images/app_update_script.png">
+
