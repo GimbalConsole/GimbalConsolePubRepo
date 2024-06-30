@@ -132,8 +132,9 @@
 
 - run firmware_update.sh script 
     <Container><Preview>
-    <Container><Preview><pre><code class="language-html"><backify-button>cd FirmwareConsolePubRepo & chmod 777 firmware_update.sh</backify-button></code></pre></Preview></Container>
-    
+    <Container><Preview><pre><code class="language-html"><backify-button>cd FirmwareConsolePubRepo</backify-button></code></pre></Preview></Container>
+    <Container><Preview><pre><code class="language-html"><backify-button>chmod 777 firmware_update.sh</backify-button></code></pre></Preview></Container>
+    </Preview></Container> 
     <Container><Preview><pre><code class="language-html"><backify-button>./firmware_update.sh</backify-button></code></pre></Preview></Container>
     </Preview></Container>
 
