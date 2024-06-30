@@ -112,9 +112,6 @@
     - download the script by using git
     <Container><Preview><pre><code class="language-html"><backify-button>git clone https://github.com/GimbalConsole/GimbalConsolePubRepo.git</backify-button></code></pre></Preview></Container>
 
-    - download the script manually
-    <img title="Controller pinout" alt="pinout image" src="/doc/images/download_repo.png">
-
 - run app_update.sh script 
     <Container><Preview>
         <pre><code class="language-html"><backify-button>cd GimbalConsolePubRepo</backify-button>
@@ -132,9 +129,6 @@
 
     - download the script by using git
     <Container><Preview><pre><code class="language-html"><backify-button>git clone https://github.com/GimbalConsole/FirmwareConsolePubRepo.git</backify-button></code></pre></Preview></Container>
-
-    - download the script manually
-    <img title="Controller pinout" alt="pinout image" src="/doc/images/download_repo.png">
 
 - run firmware_update.sh script 
     <Container><Preview>
