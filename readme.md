@@ -9,7 +9,8 @@
     - Programming STM32 MCUs using STM32CubeProgrammer
     - Programming STM32 MCUs using Gimbal Bootloader
 - [Uart driver installation on Lattepanda](#uart-driver-installationtutorial)
-- Installing the Application with the latest update
+- [Installing the Application with the latest update](#installing-the-application-with-the-latest-update)
+- [Device firmware upgarde with the latest updated firmware](#device-firmware-upgarde-with-the-latest-updated-firmware)
 
 ## Gimbal Console development workflow
 
@@ -106,10 +107,10 @@
 
 ## Installing the Application with the latest update
 
-- download app_update.sh script on your local
+- download app_update.sh script
 
     - download the script by using git
-    <Container><Preview><pre><code class="language-html"><backify-button>git clone git@github.com:GimbalConsole/GimbalConsolePubRepo.git</backify-button></code></pre></Preview></Container>
+    <Container><Preview><pre><code class="language-html"><backify-button>git clone https://github.com/GimbalConsole/GimbalConsolePubRepo.git</backify-button></code></pre></Preview></Container>
 
     - download the script manually
     <img title="Controller pinout" alt="pinout image" src="/doc/images/download_repo.png">
@@ -124,4 +125,28 @@
     </Preview></Container>
 
     <img title="Controller pinout" alt="app update" src="/doc/images/app_update_script.png">
+
+## Device firmware upgarde with the latest updated firmware
+
+- download app_update.sh script on your local
+
+    - download the script by using git
+    <Container><Preview><pre><code class="language-html"><backify-button>git clone https://github.com/GimbalConsole/FirmwareConsolePubRepo.git</backify-button></code></pre></Preview></Container>
+
+    - download the script manually
+    <img title="Controller pinout" alt="pinout image" src="/doc/images/download_repo.png">
+
+- run firmware_update.sh script 
+    <Container><Preview>
+        <pre><code class="language-html"><backify-button>cd FirmwareConsolePubRepo</backify-button>
+        </code>
+        <code class="language-html"><backify-button>chmod 777 firmware_update.sh</backify-button>
+        </code>
+        <code class="language-html"><backify-button>./firmware_update.sh</backify-button>
+        </code>
+        </pre>
+    </Preview></Container>
+
+    <img title="Controller pinout" alt="firmware update" src="/doc/images/firmware_update_script0.png">
+    <img title="Controller pinout" alt="firmware update" src="/doc/images/firmware_update_script1.png">
 
