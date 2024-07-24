@@ -11,6 +11,7 @@
 - [Uart driver installation on Lattepanda](#uart-driver-installationtutorial)
 - [Installing the Application with the latest update](#installing-the-application-with-the-latest-update)
 - [Device firmware upgarde with the latest updated firmware](#device-firmware-upgarde-with-the-latest-updated-firmware)
+- [How to run SimpleBGC_GUI desktop application on Ubuntu 22.04]
 
 ## Gimbal Console development workflow
 
@@ -141,3 +142,24 @@
     <img title="Controller pinout" alt="firmware update" src="/doc/images/firmware_update_script0.png">
     <img title="Controller pinout" alt="firmware update" src="/doc/images/firmware_update_script1.png">
 
+## How to run SimpleBGC_GUI desktop application on Ubuntu 22.04
+
+- install java runtime
+    - download [install_java_runtime.sh](https://github.com/GimbalConsole/GimbalConsolePubRepo/blob/main/install_java_runtime.sh) 
+
+    <Container><Preview><pre><code class="language-html"><backify-button>chmod +x install_java_runtime.sh</backify-button></code></pre></Preview></Container>
+    </Preview></Container>
+    <Container><Preview><pre><code class="language-html"><backify-button>./install_java_runtime.sh</backify-button></code></pre></Preview></Container>
+    </Preview></Container>
+
+    <img title="Controller pinout" alt="java run-time installation" src="/doc/images/install_java_runtime.png">   
+    <br/>
+
+- download the application from the [basecamelectronics](https://www.basecamelectronics.com/files/SimpleBGC_GUI_2_70b0.zip).
+
+- run SimpleBGC_GUI desktop application
+
+    <Container><Preview><pre><code class="language-html"><backify-button>bash run.sh</backify-button></code></pre></Preview></Container>
+    </Preview></Container>
+    <img title="Controller pinout" alt="java run-time installation" src="/doc/images/run_basecam_desktop_app.png">
+    
