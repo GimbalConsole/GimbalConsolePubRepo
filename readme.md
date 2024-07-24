@@ -158,6 +158,9 @@
 - download the application from the [basecamelectronics](https://www.basecamelectronics.com/files/SimpleBGC_GUI_2_70b0.zip).
 
 - run SimpleBGC_GUI desktop application
+    
+    <Container><Preview><pre><code class="language-html"><backify-button>cd ~/Downloads/SimpleBGC_GUI_2_70b0/</backify-button></code></pre></Preview></Container>
+    </Preview></Container>
 
     <Container><Preview><pre><code class="language-html"><backify-button>bash run.sh</backify-button></code></pre></Preview></Container>
     </Preview></Container>
