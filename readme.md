@@ -11,7 +11,7 @@
 - [Uart driver installation on Lattepanda](#uart-driver-installationtutorial)
 - [Installing the Application with the latest update](#installing-the-application-with-the-latest-update)
 - [Device firmware upgarde with the latest updated firmware](#device-firmware-upgarde-with-the-latest-updated-firmware)
-- [How to run SimpleBGC_GUI desktop application on Ubuntu 22.04]
+- [How to run SimpleBGC_GUI desktop application on Ubuntu 22.04](#how-to-run-simplebgc_gui-desktop-application-on-ubuntu-2204)
 
 ## Gimbal Console development workflow
 
@@ -35,19 +35,19 @@
 
 ## Pinout of the PCBs & Pinmap for wiring
 - Controller board pinout
-<img title="Controller pinout" alt="pinout image" src="/doc/images/controller_wiring.png">
-<img title="Controller pinout" alt="pinout image" src="/doc/images/controller_wiring1.png">
-<img title="Controller pinout" alt="pinout image" src="/doc/images/controller_wiring2.png">
+![Alt text](./doc/images/controller_wiring.png)
+![Alt text](./doc/images/controller_wiring1.png)
+![Alt text](./doc/images/controller_wiring2.png)
 - Left board pinout
-<img title="Controller pinout" alt="pinout image" src="/doc/images/left_wiring.png">
-<img title="Controller pinout" alt="pinout image" src="/doc/images/left_wiring1.png">
+![Alt text](./doc/images/left_wiring.png)
+![Alt text](./doc/images/left_wiring1.png)
 - Right board pinout
-<img title="Controller pinout" alt="pinout image" src="/doc/images/right_wiring.png">
-<img title="Controller pinout" alt="pinout image" src="/doc/images/right_wiring1.png">
+![Alt text](./doc/images/right_wiring.png)
+![Alt text](./doc/images/right_wiring1.png)
 
 ## How to flash the firmware on Gimbal console controller?
 - Wiring to STLink2
-    <img title="Controller pinout" alt="pinout image" src="/doc/images/STLink2_pinout.png">
+    ![Alt text](./doc/images/STLink2_pinout.png)
 
     | Controller Debug | STLink2 |
     | --- | --- |
@@ -122,7 +122,7 @@
         </pre>
     </Preview></Container>
 
-    <img title="Controller pinout" alt="app update" src="/doc/images/app_update_script.png">
+    ![Alt text](./doc/images/app_update_script.png)
 
 ## Device firmware upgarde with the latest updated firmware
 
@@ -139,8 +139,8 @@
     <Container><Preview><pre><code class="language-html"><backify-button>./firmware_update.sh</backify-button></code></pre></Preview></Container>
     </Preview></Container>
 
-    <img title="Controller pinout" alt="firmware update" src="/doc/images/firmware_update_script0.png">
-    <img title="Controller pinout" alt="firmware update" src="/doc/images/firmware_update_script1.png">
+    ![Alt text](./doc/images/firmware_update_script0.png)
+    ![Alt text](./doc/images/firmware_update_script1.png)
 
 ## How to run SimpleBGC_GUI desktop application on Ubuntu 22.04
 
@@ -152,7 +152,7 @@
     <Container><Preview><pre><code class="language-html"><backify-button>./install_java_runtime.sh</backify-button></code></pre></Preview></Container>
     </Preview></Container>
 
-    <img title="Controller pinout" alt="java run-time installation" src="/doc/images/install_java_runtime.png">   
+    ![Alt text](./doc/images/install_java_runtime.png)
     <br/>
 
 - download the application from the [basecamelectronics](https://www.basecamelectronics.com/files/SimpleBGC_GUI_2_70b0.zip).
@@ -161,5 +161,5 @@
 
     <Container><Preview><pre><code class="language-html"><backify-button>bash run.sh</backify-button></code></pre></Preview></Container>
     </Preview></Container>
-    <img title="Controller pinout" alt="java run-time installation" src="/doc/images/run_basecam_desktop_app.png">
+    ![Alt text](./doc/images/run_basecam_desktop_app.png)
     
