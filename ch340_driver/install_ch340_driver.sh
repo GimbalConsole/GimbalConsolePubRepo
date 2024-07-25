@@ -1,37 +1,54 @@
 #!/bin/bash
 
+# Check if running as root
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run as root or use sudo"
+  exit
+fi
+
 # Update system
 echo "Updating system..."
-sudo apt update && sudo apt upgrade -y
+apt update && apt upgrade -y
 
 # Install required packages
 echo "Installing required packages..."
-sudo apt install -y build-essential dkms git
+apt install -y build-essential dkms git
 
-# Clone the CH340 driver repository
-echo "Cloning CH340 driver repository..."
-git clone https://github.com/juliagoda/CH340-Driver.git
+# Clone the CH341SER driver repository
+echo "Cloning CH341SER driver repository..."
+git clone https://github.com/juliagoda/CH341SER.git
 
 # Change to the driver directory
-cd CH340-Driver
+cd CH341SER
 
 # Compile and install the driver
 echo "Compiling and installing the CH340 driver..."
 make
+
+# Disable BTF generation if necessary
+if ! grep -q CONFIG_DEBUG_INFO_BTF /boot/config-$(uname -r); then
+  echo "Disabling BTF generation..."
+  echo "CONFIG_DEBUG_INFO_BTF=n" >> /boot/config-$(uname -r)
+fi
+
 sudo make load
 
 # Check if the driver is loaded
 echo "Checking if the driver is loaded..."
-dmesg | grep ch34x
+sudo dmesg | grep ch34x
 
 # Create a symbolic link (optional)
 echo "Creating a symbolic link for ease of access..."
-sudo ln -s /dev/ttyUSB0 /dev/CH340
+if [ -e /dev/ttyUSB0 ]; then
+  sudo ln -s /dev/ttyUSB0 /dev/CH340
+else
+  echo "/dev/ttyUSB0 not found, skipping symlink creation."
+fi
 
 # Clean up
 echo "Cleaning up..."
 cd ..
-rm -rf CH340-Driver
+rm -rf CH341SER
 
 echo "CH340 driver installation completed successfully!"
 
