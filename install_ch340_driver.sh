@@ -6,9 +6,10 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-sudo systemctl stop brltty
-sudo systemctl disable brltty
-sudo apt remove brltty
+echo "Removing brltty service..."
+systemctl stop brltty
+systemctl disable brltty
+apt remove -y brltty
 
 # Update system
 echo "Updating system..."
