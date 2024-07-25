@@ -1,1 +1,0 @@
-savedcmd_/home/kkk/work/GimbalConsolePubRepo/ch340_driver/Module.symvers :=  scripts/mod/modpost -m -a      -o /home/kkk/work/GimbalConsolePubRepo/ch340_driver/Module.symvers -T /home/kkk/work/GimbalConsolePubRepo/ch340_driver/modules.order -i Module.symvers -e 

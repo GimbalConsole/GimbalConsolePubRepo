@@ -1,1 +1,0 @@
-savedcmd_/home/kkk/work/GimbalConsolePubRepo/ch340_driver/modules.order := {   echo /home/kkk/work/GimbalConsolePubRepo/ch340_driver/ch341.o; :; } > /home/kkk/work/GimbalConsolePubRepo/ch340_driver/modules.order
