@@ -155,6 +155,14 @@
     ![Alt text](./doc/images/install_java_runtime.png)
     <br/>
 
+- RF900 USB-UART driver (ch340 driver)
+    - download [install_ch340_runtime.sh](https://github.com/GimbalConsole/GimbalConsolePubRepo/blob/main/install_ch340_driver.sh) 
+
+    <Container><Preview><pre><code class="language-html"><backify-button>chmod +x install_ch340_driver.sh</backify-button></code></pre></Preview></Container>
+    </Preview></Container>
+    <Container><Preview><pre><code class="language-html"><backify-button>sudo bash install_ch340_driver.sh</backify-button></code></pre></Preview></Container>
+    </Preview></Container>
+
 - download the application from the [basecamelectronics](https://www.basecamelectronics.com/files/SimpleBGC_GUI_2_70b0.zip).
 
 - run SimpleBGC_GUI desktop application
