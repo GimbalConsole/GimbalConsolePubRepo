@@ -4,21 +4,12 @@ PWD :=$(shell pwd)
 default:
 	$(MAKE) -C $(KERNELDIR)  M=$(PWD)  
 clean:
-	rm -rf *.mk .tmp_versions Module.symvers *.mod.c *.o *.ko .*.cmd Module.markers modules.order *.a *.mod
+	rm -rf .tmp_versions Module.symvers *.mod.c *.o *.ko .*.cmd Module.markers modules.order
 load:
-	insmod ch341.ko
+	modprobe usbserial
+	insmod ch34x.ko
 unload:
-	rmmod ch341
-install: default
-	rmmod ch341 || true
-	insmod ch341.ko || true
-	mkdir -p /lib/modules/$(shell uname -r)/kernel/drivers/usb/serial/ || true
-	cp -f ./ch341.ko /lib/modules/$(shell uname -r)/kernel/drivers/usb/serial/ || true
-	depmod -a
-uninstall:
-	rmmod ch341 || true
-	rm -rf /lib/modules/$(shell uname -r)/kernel/drivers/usb/serial/ch341.ko || true
-	depmod -a
+	rmmod ch34x
 else
-	obj-m := ch341.o
+	obj-m := ch34x.o
 endif
