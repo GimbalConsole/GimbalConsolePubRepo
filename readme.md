@@ -174,3 +174,30 @@
     </Preview></Container>
     ![Alt text](./doc/images/run_basecam_desktop_app.png)
     
+## RF900 Configuration
+- working in command mode
+![Alt text](./doc/images/RF900_configuration.png)
+
+- configuration commands
+    #### Description
+        +++ : Escape from Data Mode (switch to commmand mode)
+        ATS101 - operation mode (0: Master, 2: Slave)
+        ATS102 - baud rate (1: 115200)
+        ATS104 - Network address (use the same address)
+        AT&V - show the current configuration
+        AT&W - write the changes to NVRAM
+    #### Master device (connect with Latte Panda)
+        +++
+        ATS101=0
+        ATS102=1
+        ATS104=1234567890
+        AT&V
+        AT&W
+    #### Slave device (connect with Pi Zero)
+        +++
+        ATS101=2
+        ATS102=1
+        ATS104=1234567890
+        AT&V
+        AT&W
+    
