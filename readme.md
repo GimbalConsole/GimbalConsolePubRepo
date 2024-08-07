@@ -12,6 +12,7 @@
 - [Installing the Application with the latest update](#installing-the-application-with-the-latest-update)
 - [Device firmware upgarde with the latest updated firmware](#device-firmware-upgarde-with-the-latest-updated-firmware)
 - [How to run SimpleBGC_GUI desktop application on Ubuntu 22.04](#how-to-run-simplebgc_gui-desktop-application-on-ubuntu-2204)
+- [RF modules configuration](#rf900-modules-configuration)
 
 ## Gimbal Console development workflow
 
@@ -174,7 +175,7 @@
     </Preview></Container>
     ![Alt text](./doc/images/run_basecam_desktop_app.png)
     
-## RF900 Configuration
+## RF900 modules Configuration
 - working in command mode
 ![Alt text](./doc/images/RF900_configuration.png)
 
